@@ -1,0 +1,13 @@
+@isTest
+private class SpecialAccountTest
+{
+    testMethod static void testAccountCreate()
+    {
+       SpecialAccounts.AccountInfo info=new SpecialAccounts.AccountInfo();
+       info.AcctNAme='Manni Steve';
+       info.AcctNumber=12345;
+       Account acct=SpecialAccounts.createAccount(info);
+       System.assert(acct!=null);
+       
+    }
+}
