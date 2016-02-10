@@ -1,0 +1,20 @@
+global class SpecialAccounts
+{
+    global class AccountInfo
+    {
+        webService String AcctName;
+        webService Integer  AcctNumber;
+        
+    }
+    webService static Account createAccount(AccountInfo info)
+    {
+        Account acct=new Account();
+        acct.NAme=info.AcctName;
+        acct.AccountNumber=String.ValueOf(info.AcctNumber);
+        insert acct;
+        return acct;   
+    
+    }
+    
+
+}
