@@ -1,0 +1,21 @@
+@isTest
+public class TestAccountCreation
+{
+    static testMethod void addNewAccount()
+    {
+       Account accToCreate=new Account();
+       accToCreate.Name='BOAAccount';
+       accToCreate.NumberOfEmployees=12;
+       insert accToCreate;
+    }
+    
+    static testMethod void addNewAccountWithOutName()
+    {
+       Account accToCreate=new Account();
+      
+       accToCreate.NumberOfEmployees=12;
+       insert accToCreate;
+    }
+
+
+}
